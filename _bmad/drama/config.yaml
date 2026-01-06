@@ -1,0 +1,49 @@
+# 시니어 드라마 모듈 설정
+# Senior Drama Module Configuration
+
+# 사용자 설정
+user_name: "작가님"
+communication_language: "Korean"
+
+# 출력 설정
+output_folder: "{project-root}/output/dramas"
+default_project_name: "new-drama"
+
+# 타겟 오디언스
+target_audience:
+  age_range: "50-70"
+  gender: "여성"
+  core_empathy_codes:
+    - "가족을 위해 헌신한 삶에 대한 인정"
+    - "시어머니와 며느리 갈등, 며느리의 서러움"
+    - "자녀에 대한 걱정과 손주에 대한 사랑"
+    - "남편과의 미묘한 갈등"
+    - "친정과 시댁 사이의 외로움"
+    - "노화에 대한 두려움과 수용"
+
+# 스토리 구조
+story_structure:
+  chapters: 8
+  chapter_word_count: 3000
+  exception_chapters: [1, 7, 8]  # 더 긴 분량 허용 (3200-3500자)
+
+# 이미지 프롬프트 설정
+image_prompts:
+  scenes_per_chapter: 3
+  style: "korean_drama_realistic"
+  exclude_elements:
+    - "art style"
+    - "artist names"
+    - "lighting"
+    - "camera angles"
+    - "lens types"
+    - "color tones"
+
+# 내보내기 설정
+export:
+  formats:
+    - "n8n"
+    - "pdf"
+    - "markdown"
+  pdf_engine: "xelatex"
+  pdf_font: "Noto Sans CJK KR"
