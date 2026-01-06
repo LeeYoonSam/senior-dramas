@@ -1,0 +1,67 @@
+# 화해와 용서 테마
+name: "화해와 용서"
+name_en: "Reconciliation and Forgiveness"
+description: "오랜 상처를 치유하고 진정한 화해에 이르는 감동적인 여정"
+
+# 핵심 감정 키워드
+emotional_keywords:
+  - "용서"
+  - "치유"
+  - "해방"
+  - "감사"
+
+# 화해 유형
+reconciliation_types:
+  long_separation:
+    name: "오랜 단절 후 재회"
+    description: "수십 년 만에 다시 만나는 가족"
+    key_moments:
+      - "우연한 재회의 계기"
+      - "과거의 상처 마주하기"
+      - "서로의 삶 이해하기"
+      - "용서와 화해의 순간"
+
+  deathbed_reconciliation:
+    name: "마지막 기회"
+    description: "생의 마지막에 이루어지는 화해"
+    key_moments:
+      - "갑작스러운 건강 악화 소식"
+      - "병상 앞에서의 망설임"
+      - "하지 못했던 말들"
+      - "눈물의 화해"
+
+  misunderstanding_resolved:
+    name: "오해 해소"
+    description: "숨겨진 진실이 밝혀지며 오해가 풀리는 이야기"
+    key_moments:
+      - "오해의 시작점 회상"
+      - "진실을 알게 되는 계기"
+      - "충격과 후회"
+      - "새로운 시각으로 관계 재정립"
+
+# 스토리 공식
+story_formula:
+  pattern: "intergenerational_understanding"
+  description: |
+    세대 간 단절과 오해를 넘어
+    서로의 입장을 이해하고
+    진정한 가족의 의미를 되찾는 여정.
+
+    과거의 상처를 인정하고,
+    용서를 통해 치유되며,
+    더 깊은 사랑으로 연결된다.
+
+# 감정 복합성 (엔딩)
+emotional_complexity:
+  - relief: "드디어 인정받았다는 안도"
+  - regret: "너무 늦은 건 아닐까 하는 후회"
+  - hope: "이 나이에 다시 시작할 수 있을까 하는 기대와 불안"
+  - peace: "시간의 흐름을 받아들이는 평화"
+
+# 상징적 소품 예시
+symbolic_objects:
+  - "어린 시절 주고받은 편지"
+  - "함께 심었던 나무"
+  - "어머니가 물려준 레시피"
+  - "아버지의 일기장"
+  - "오래된 가족 앨범"

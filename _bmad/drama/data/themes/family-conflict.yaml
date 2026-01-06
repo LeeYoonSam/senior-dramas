@@ -1,0 +1,77 @@
+# 가족 갈등 테마
+name: "가족 갈등"
+name_en: "Family Conflict"
+description: "오랜 세월 쌓인 가족 간의 오해와 갈등이 폭발하는 이야기"
+
+# 핵심 감정 키워드
+emotional_keywords:
+  - "서운함"
+  - "억울함"
+  - "분노"
+  - "후회"
+
+# 대표적인 갈등 유형
+conflict_types:
+  mother_in_law_daughter_in_law:
+    name: "시어머니와 며느리"
+    description: "30년 시월드 역사, 말 못할 서러움과 오해"
+    key_moments:
+      - "첫 만남의 서먹함"
+      - "손주 양육 방식 차이"
+      - "명절 음식 준비 갈등"
+      - "며느리의 숨겨온 눈물"
+
+  parent_child:
+    name: "부모와 자녀"
+    description: "기대와 실망, 사랑과 간섭 사이"
+    key_moments:
+      - "진로 선택 갈등"
+      - "결혼 반대"
+      - "독립 vs 효도"
+      - "부모의 노후 돌봄"
+
+  siblings:
+    name: "형제자매"
+    description: "부모 재산, 돌봄 책임, 어린 시절 상처"
+    key_moments:
+      - "부모 편애에 대한 원망"
+      - "재산 분배 갈등"
+      - "부모 돌봄 역할 분담"
+      - "어린 시절 트라우마 재점화"
+
+  husband_wife:
+    name: "부부"
+    description: "결혼 생활의 권태와 미묘한 갈등"
+    key_moments:
+      - "소통 단절"
+      - "역할 기대 충돌"
+      - "외도 또는 의심"
+      - "은퇴 후 동거 어려움"
+
+# 스토리 공식
+story_formula:
+  pattern: "hidden_family_truth"
+  description: |
+    가족을 위해 희생해온 여성 주인공.
+    가족 갈등과 오해 속에서 상처받지만,
+    결정적 순간 진심과 숨겨진 과거가 드러나면서
+    가족이 진정한 이해와 화해에 이른다.
+
+# 챕터별 갈등 곡선
+conflict_arc:
+  chapter_1: "평화로운 일상 속 갈등의 씨앗"
+  chapter_2: "갈등 표면화, 주인공 상처"
+  chapter_3: "관계 악화, 고립과 결심"
+  chapter_4: "예상치 못한 지지자 등장"
+  chapter_5: "숨겨진 과거/비밀 폭로"
+  chapter_6: "가족 붕괴 위기, 최악의 순간"
+  chapter_7: "모든 진실 공개, 감정 폭발"
+  chapter_8: "진정한 이해와 화해, 새로운 시작"
+
+# 상징적 소품 예시
+symbolic_objects:
+  - "30년 된 시어머니의 반지"
+  - "바래진 가족사진"
+  - "어머니의 요리 레시피 노트"
+  - "아버지의 낡은 시계"
+  - "첫 손주 돌잔치 비디오"
