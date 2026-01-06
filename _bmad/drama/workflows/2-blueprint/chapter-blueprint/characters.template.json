@@ -1,0 +1,45 @@
+{
+  "storyMetadata": {
+    "projectName": "{{project_name}}",
+    "title": "{{title}}",
+    "coreEmotionalKeywords": ["{{keyword1}}", "{{keyword2}}"],
+    "symbolicObject": "{{symbolic_object}}",
+    "createdDate": "{{created_date}}"
+  },
+  "characters": {
+    "{{protagonist_name}}": {
+      "name": "{{protagonist_name}}",
+      "age": {{protagonist_age}},
+      "role": "주인공",
+      "relationship": "{{protagonist_relationship}}",
+      "detail": "{{protagonist_detail}}",
+      "personality": "{{protagonist_personality}}",
+      "hiddenSelf": "{{protagonist_hidden_self}}",
+      "wound": "{{protagonist_wound}}",
+      "desire": "{{protagonist_desire}}",
+      "englishImagePrompt": "{{protagonist_image_prompt}}"
+    },
+    "{{character2_name}}": {
+      "name": "{{character2_name}}",
+      "age": {{character2_age}},
+      "role": "{{character2_role}}",
+      "relationship": "{{character2_relationship}}",
+      "detail": "{{character2_detail}}",
+      "personality": "{{character2_personality}}",
+      "hiddenSelf": "{{character2_hidden_self}}",
+      "wound": "{{character2_wound}}",
+      "desire": "{{character2_desire}}",
+      "englishImagePrompt": "{{character2_image_prompt}}"
+    }
+  },
+  "chapters": {
+    "chapter1": "{{chapter1_summary}}",
+    "chapter2": "{{chapter2_summary}}",
+    "chapter3": "{{chapter3_summary}}",
+    "chapter4": "{{chapter4_summary}}",
+    "chapter5": "{{chapter5_summary}}",
+    "chapter6": "{{chapter6_summary}}",
+    "chapter7": "{{chapter7_summary}}",
+    "chapter8": "{{chapter8_summary}}"
+  }
+}
