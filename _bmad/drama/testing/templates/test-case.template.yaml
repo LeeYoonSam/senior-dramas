@@ -1,0 +1,86 @@
+# 테스트 케이스 템플릿
+# 복사하여 fixtures/ 폴더에 저장 후 사용
+
+test_case:
+  # 테스트 기본 정보
+  name: "{테스트 이름}"
+  description: "{테스트 설명}"
+  created_at: "{YYYY-MM-DD}"
+
+  # 테스트 대상 프롬프트 유형
+  # story | blueprint | script | image-prompt
+  prompt_type: "script"
+
+  # 입력 데이터
+  input:
+    # 테마 관련 (story, blueprint)
+    theme: "가족 갈등"
+    sub_theme: "시어머니와 며느리"
+
+    # 프로젝트 관련
+    project_name: "테스트-드라마"
+    title: "엄마의 마지막 요리"
+
+    # 캐릭터 관련
+    protagonist:
+      name: "김순자"
+      age: 65
+      background: "40년 주부, 시어머니와 30년 갈등"
+
+    # 챕터 관련 (script)
+    chapter_number: 1
+    chapter_title: "평온한 아침의 그림자"
+    chapter_summary: "겉보기에 평화로운 가족의 일상, 숨겨진 갈등의 씨앗"
+
+    # 이전 챕터 요약 (chapter > 1인 경우)
+    previous_chapters: []
+
+  # 예상 결과
+  expected:
+    # 출력 형식
+    output_format: "json"  # json | markdown | text
+
+    # 필수 포함 요소
+    key_elements:
+      - "3가지 서사 도구 사용 (내레이션/대사/독백)"
+      - "오프닝 훅"
+      - "챕터 끝 클리프행어"
+      - "이미지 프롬프트 3개"
+
+    # JSON 필수 필드
+    required_fields:
+      - "chapters.chapter1"
+      - "imagePrompts.scene1"
+      - "imagePrompts.scene2"
+      - "imagePrompts.scene3"
+
+    # 분량 기준
+    word_count:
+      min: 2700
+      max: 3500
+
+    # 품질 기준 (1-5점)
+    quality_criteria:
+      emotional_depth: 4  # 감정 깊이
+      cultural_accuracy: 4  # 문화적 정확성
+      target_audience_fit: 4  # 타겟 적합성
+
+  # 테스트 결과 (실행 후 채워짐)
+  result:
+    status: "pending"  # pending | pass | fail
+    executed_at: ""
+    response_time_ms: 0
+    token_count: 0
+    actual_word_count: 0
+
+    # 품질 평가 결과
+    quality_scores:
+      emotional_depth: 0
+      cultural_accuracy: 0
+      target_audience_fit: 0
+
+    # 오류 정보 (실패 시)
+    errors: []
+
+    # 메모
+    notes: ""

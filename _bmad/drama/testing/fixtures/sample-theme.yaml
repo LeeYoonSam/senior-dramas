@@ -1,0 +1,32 @@
+# 샘플 테마 데이터
+# 테스트에 사용할 기본 테마 설정
+
+sample_theme:
+  main: "가족 갈등"
+  sub_type: "시어머니와 며느리"
+
+  emotional_keywords:
+    - "서러움"
+    - "인정받고 싶음"
+
+  conflict_summary: |
+    30년간 시어머니 밑에서 참고 견뎌온 며느리.
+    어느 날 시어머니가 쓰러지면서
+    그동안 숨겨왔던 진실들이 하나씩 드러난다.
+
+  symbolic_object:
+    name: "시어머니의 반지"
+    description: |
+      시어머니가 결혼할 때 시어머니에게 받은 반지.
+      30년간 한 번도 끼지 않고 서랍에 보관해왔다.
+      반지에 얽힌 진짜 이야기는...
+
+  ending_tone: "부분적 이해와 화해, 여운 있는 결말"
+
+  target_audience:
+    age: "50-70대"
+    gender: "여성"
+    empathy_codes:
+      - "시월드 고충"
+      - "인정받지 못한 희생"
+      - "늦은 화해의 아쉬움"
