@@ -1,0 +1,213 @@
+{
+  "name": "Senior Drama Generator - {{project_name}}",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "{{google_sheet_id}}"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": "주제"
+        },
+        "event": "rowAdded"
+      },
+      "id": "google-sheets-trigger",
+      "name": "Google Sheets Trigger",
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 4,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "systemPrompt",
+              "value": "{{system_prompt_content}}"
+            }
+          ]
+        }
+      },
+      "id": "set-system-prompt",
+      "name": "Set System Prompt",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [220, 0]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "={{ $json.systemPrompt }}"
+            },
+            {
+              "role": "user",
+              "content": "system message에 있는 프롬프트 규칙에 따라서 아래 주제로 8챕터 청사진, 등장인물을 구성해줘{{ $('Google Sheets Trigger').item.json['주제'] }}, 그리고 Json 형태를 꼭 지켜줘 {\"storyMetadata\":{\"coreEmotionalKeywords\":[\"string\",\"string\"],\"symbolicObject\":\"string\"},\"characters\":{\"주인공\":{\"name\":\"string\",\"detail\":\"string\",\"englishImagePrompt\":\"string\"}},\"chapters\":{\"chapter1\":\"string\",\"chapter2\":\"string\",\"chapter3\":\"string\",\"chapter4\":\"string\",\"chapter5\":\"string\",\"chapter6\":\"string\",\"chapter7\":\"string\",\"chapter8\":\"string\"}}"
+            }
+          ]
+        }
+      },
+      "id": "ai-generate-blueprint",
+      "name": "AI Generate Blueprint",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1,
+      "position": [440, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "let data = $input.first().json.output;\nif (typeof data === 'object' && data !== null) {\n  return [{ json: data }];\n}\nlet text = data || '';\ntext = text.replace(/```json\\s*/gi, '').replace(/```\\s*/g, '');\n\nconst startIndex = text.indexOf('{');\nconst endIndex = text.lastIndexOf('}');\ntext = text.substring(startIndex, endIndex + 1);\ntext = text.replace(/},\\s*([가-힣]+)\"/g, '}, \"$1\"');\n\nconst parsed = JSON.parse(text);\n  return [{ json: parsed }];"
+      },
+      "id": "json-parser",
+      "name": "JSON Parser",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nreturn items.map(item => {\n  const data = item.json;\n\n  const chaptersText = data.chapters;\n\n  const charactersText = Object.entries(data.characters)\n    .map(([name, info]) => `${name}: ${info.detail}`)\n    .join(' | ');\n\n  const combinedText = `${JSON.stringify(chaptersText)} [등장인물] ${charactersText}`;\n\n  return {\n    json: {\n      storyData: combinedText,\n      characters: data.characters\n    }\n  };\n});"
+      },
+      "id": "merge-data",
+      "name": "Merge Chapter & Characters",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [880, 0]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "={{ $('Set System Prompt').item.json.systemPrompt }}"
+            },
+            {
+              "role": "user",
+              "content": "system message에 있는 프롬프트 규칙에 따라서 아래 챕터 대본을 구성해줘. 앞단계는 모두 완료되었으니 full script writing 다음부터 진행해서 전달해줘:{{ $json.storyData }}, 대답은 Json 형태를 꼭 지켜줘 {\"chapters\":{\"chapter1\":\"string\"},\"imagePrompts\":{\"scene1\":{\"location\":\"string\",\"situation\":\"string\",\"characters\":\"string\",\"imagePrompt\":\"string\"},\"scene2\":{\"location\":\"string\",\"situation\":\"string\",\"characters\":\"string\",\"imagePrompt\":\"string\"},\"scene3\":{\"location\":\"string\",\"situation\":\"string\",\"characters\":\"string\",\"imagePrompt\":\"string\"}}}"
+            }
+          ]
+        }
+      },
+      "id": "ai-generate-script",
+      "name": "AI Generate Script",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1,
+      "position": [1100, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-goog-api-key",
+              "value": "{{gemini_api_key}}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"{{ $json.imagePrompts.scene1.imagePrompt }}\"\n        }\n      ]\n    }\n  ],\n  \"generationConfig\": {\n    \"responseModalities\": [\"image\", \"text\"]\n  }\n}"
+      },
+      "id": "image-generation",
+      "name": "Generate Image",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1320, 0]
+    }
+  ],
+  "connections": {
+    "Google Sheets Trigger": {
+      "main": [
+        [
+          {
+            "node": "Set System Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set System Prompt": {
+      "main": [
+        [
+          {
+            "node": "AI Generate Blueprint",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Generate Blueprint": {
+      "main": [
+        [
+          {
+            "node": "JSON Parser",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "JSON Parser": {
+      "main": [
+        [
+          {
+            "node": "Merge Chapter & Characters",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge Chapter & Characters": {
+      "main": [
+        [
+          {
+            "node": "AI Generate Script",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Generate Script": {
+      "main": [
+        [
+          {
+            "node": "Generate Image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "senior-drama-generator"
+  }
+}
