@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "let data = $input.first().json.output;\nif (typeof data === 'object' && data !== null) {\n  return [{ json: data }];\n}\nlet text = data || '';\ntext = text.replace(/```json\\s*/gi, '').replace(/```\\s*/g, '');\n\nconst startIndex = text.indexOf('{');\nconst endIndex = text.lastIndexOf('}');\ntext = text.substring(startIndex, endIndex + 1);\ntext = text.replace(/},\\s*([가-힣]+)\"/g, '}, \"$1\"');\n\nconst parsed = JSON.parse(text);\n  return [{ json: parsed }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        96,
+        128
+      ],
+      "id": "499fa3ba-06f8-47ab-9825-4aa48b5fa272",
+      "name": "Code1"
+    }
+  ],
+  "connections": {
+    "Code1": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "ab9a1454bcda8e3ebf7fd7d9e3347cb873e37ff49f3f6d5a73837eb9628ba0ea"
+  }
+}

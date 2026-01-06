@@ -1,0 +1,25 @@
+{
+    "chapters": {
+        "chapter1": "string"
+    },
+    "imagePrompts": {
+        "scene1": {
+            "location": "string",
+            "situation": "string",
+            "characters": "string",
+            "imagePrompt": "string"
+        },
+        "scene2": {
+            "location": "string",
+            "situation": "string",
+            "characters": "string",
+            "imagePrompt": "string"
+        },
+        "scene3": {
+            "location": "string",
+            "situation": "string",
+            "characters": "string",
+            "imagePrompt": "string"
+        }
+    }
+}

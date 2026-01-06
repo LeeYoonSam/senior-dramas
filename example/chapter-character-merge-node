@@ -1,0 +1,29 @@
+{
+    "nodes": [
+        {
+            "parameters": {
+                "jsCode": "  const items = $input.all();\n\n  return items.map(item => {\n    const data = item.json;\n\n    // 챕터 정보\n    const chaptersText = data.chapters;\n\n    // 등장인물 정보 합치기\n    const charactersText = Object.entries(data.characters)\n      .map(([name, info]) => `${name}: ${info.detail}`)\n      .join(' | ');\n\n    // 합치기\n    const combinedText = `${chaptersText} [등장인물] ${charactersText}`;\n\n    return {\n      json: {\n        storyData: combinedText\n      }\n    };\n  });"
+            },
+            "type": "n8n-nodes-base.code",
+            "typeVersion": 2,
+            "position": [
+                384,
+                384
+            ],
+            "id": "deafc16d-90d6-4aa9-b290-27abe30d7ba9",
+            "name": "Code2"
+        }
+    ],
+    "connections": {
+        "Code2": {
+            "main": [
+                []
+            ]
+        }
+    },
+    "pinData": {},
+    "meta": {
+        "templateCredsSetupCompleted": true,
+        "instanceId": "ab9a1454bcda8e3ebf7fd7d9e3347cb873e37ff49f3f6d5a73837eb9628ba0ea"
+    }
+}

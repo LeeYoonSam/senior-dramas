@@ -1,0 +1,32 @@
+# Source for Prompt (User Message)
+
+```
+system message에 있는 프롬프트 규칙에 따라서 아래 주제로 8챕터 청사진, 등장인물을 구성해줘{{ $('Google Sheets Trigger').item.json['주제'] }}, 그리고 Json 형태를 꼭 지켜줘 {
+  "storyMetadata": {
+    "coreEmotionalKeywords": ["string", "string"],
+    "symbolicObject": "string"
+  },
+  "characters": {
+    "김미숙": {
+      "name": "string",
+      "detail": "string",
+      "englishImagePrompt": "string"
+    },
+    "박민주": {
+      "name": "string",
+      "detail": "string",
+      "englishImagePrompt": "string"
+    }
+  },
+  "chapters": {
+    "chapter1": "string",
+    "chapter2": "string",
+    "chapter3": "string",
+    "chapter4": "string",
+    "chapter5": "string",
+    "chapter6": "string",
+    "chapter7": "string",
+    "chapter8": "string"
+  }
+}
+```
