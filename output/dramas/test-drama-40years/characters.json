@@ -1,0 +1,97 @@
+{
+  "storyMetadata": {
+    "projectName": "test-drama-40years",
+    "title": "40년 만의 진실",
+    "coreEmotionalKeywords": ["서러움", "화해"],
+    "symbolicObject": "어머니의 일기장",
+    "createdAt": "2026-01-06"
+  },
+  "characters": {
+    "박영순": {
+      "name": "박영순",
+      "age": 68,
+      "role": "주인공",
+      "relationship": "어머니의 둘째 딸",
+      "personality": {
+        "surface": "강하고 독립적, 성공한 여성, 자녀들을 훌륭히 키운 어머니",
+        "hidden": "8살 때 버림받았다는 상처, 인정받고 싶은 갈망, 깊은 외로움"
+      },
+      "background": "8살 때 어머니에 의해 서울 친척집으로 보내져 혼자 성장. 스스로 성공하여 자녀들을 훌륭히 키웠지만, 평생 어머니에 대한 원망과 서러움을 안고 살아옴.",
+      "wound": "어머니에게 버림받았다는 믿음, 40년간의 단절과 원망",
+      "desire": "어머니의 사랑을 확인받고 싶음, 자신이 사랑받을 가치가 있음을 알고 싶음",
+      "speechPattern": "단호하고 간결한 말투, 감정을 드러내지 않으려 함",
+      "physicalFeature": "단정하게 정돈된 회색 섞인 단발머리, 깊은 눈가 주름, 강한 인상이지만 가끔 보이는 쓸쓸함",
+      "englishImagePrompt": "Korean woman in her late 60s, short neat gray-streaked hair, strong dignified appearance, deep wrinkles around eyes, wearing simple elegant clothes, determined expression but with hidden sadness in her eyes, slim build, neat posture"
+    },
+    "김복순": {
+      "name": "김복순",
+      "age": 92,
+      "role": "핵심 갈등 상대 / 화해 대상",
+      "relationship": "영순의 어머니",
+      "personality": {
+        "surface": "치매로 인해 혼란스럽고 연약해진 노인",
+        "hidden": "평생 자식들을 위해 희생한 어머니, 영순에 대한 깊은 그리움과 죄책감"
+      },
+      "background": "6남매를 홀로 키운 강인한 어머니. 가장 똑똑한 둘째 딸 영순이 좋은 교육을 받도록 서울 친척집으로 보냈으나, 이것이 평생의 죄책감이 됨. 40년간 매일 밤 일기를 쓰며 딸을 그리워함.",
+      "wound": "딸을 보내야 했던 가난한 어머니로서의 죄책감, 화해하지 못한 채 기억을 잃어가는 현재",
+      "desire": "영순이와 화해하고 사랑을 전하고 싶음",
+      "speechPattern": "치매로 인해 과거와 현재가 섞인 말투, 가끔 맑은 순간에 또렷하게 말함",
+      "physicalFeature": "흰 머리, 작고 마른 체구, 주름진 얼굴이지만 맑은 순간엔 따뜻한 눈빛",
+      "englishImagePrompt": "Very elderly Korean woman in her early 90s, white thin hair, small frail body, deeply wrinkled face, wearing traditional Korean hanbok or comfortable home clothes, sometimes confused expression but warm gentle eyes when lucid, sitting or lying in traditional Korean room"
+    },
+    "박영희": {
+      "name": "박영희",
+      "age": 65,
+      "role": "조력자",
+      "relationship": "영순의 여동생, 어머니를 돌봐온 막내 딸",
+      "personality": {
+        "surface": "언니에 대한 서운함, 비난적 태도",
+        "hidden": "언니 없이 홀로 어머니를 돌봐온 지침, 사실은 언니가 돌아오길 바랐음"
+      },
+      "background": "어머니 곁에 남아 평생 돌봐옴. 떠난 언니에 대한 서운함이 있지만, 어머니가 매일 언니 이름을 부르는 것을 보며 복잡한 감정을 느낌.",
+      "wound": "혼자 어머니를 돌봐야 했던 외로움, 언니에 대한 질투와 서운함",
+      "desire": "가족이 다시 하나가 되길 바람, 언니와의 화해",
+      "speechPattern": "직설적이고 날카롭지만, 진심이 담긴 말투",
+      "physicalFeature": "생활의 피로가 묻어나는 얼굴, 수수한 차림, 강인한 손",
+      "englishImagePrompt": "Korean woman in her mid-60s, tired but strong appearance, simple practical clothing, graying hair pulled back simply, weathered hands from years of caregiving, straightforward honest eyes, standing in modest home"
+    },
+    "이재현": {
+      "name": "이재현",
+      "age": 40,
+      "role": "가족 / 조력자",
+      "relationship": "영순의 아들",
+      "personality": {
+        "surface": "어머니를 걱정하는 효자",
+        "hidden": "어머니의 과거 상처를 이해하고 치유를 돕고 싶음"
+      },
+      "background": "영순의 외아들. 할머니에 대해 들어본 적 없이 자랐지만, 어머니의 숨겨진 상처를 느끼고 있었음. 할머니 집에서 편지를 발견하는 결정적 역할.",
+      "wound": "어머니의 닫힌 마음, 가족의 비밀",
+      "desire": "어머니가 상처에서 벗어나 행복해지길 바람",
+      "speechPattern": "조심스럽고 배려깊은 말투",
+      "physicalFeature": "깔끔한 인상의 중년 남성, 어머니를 닮은 눈",
+      "englishImagePrompt": "Korean man in his early 40s, neat professional appearance, gentle eyes similar to his mother, wearing casual but clean clothes, caring concerned expression"
+    },
+    "김수정": {
+      "name": "김수정",
+      "age": 38,
+      "role": "가족",
+      "relationship": "영순의 며느리",
+      "personality": {
+        "surface": "다정하고 이해심 많은 며느리",
+        "hidden": "시어머니의 상처를 알고 조용히 지지함"
+      },
+      "background": "시어머니 영순과 좋은 관계를 유지해온 며느리. 시어머니의 과거에 대해 알게 되면서 더욱 이해하고 지지함.",
+      "wound": "특별한 상처 없음",
+      "desire": "가족의 화목, 시어머니의 행복",
+      "speechPattern": "부드럽고 위로하는 말투",
+      "physicalFeature": "따뜻한 인상, 밝은 미소",
+      "englishImagePrompt": "Korean woman in her late 30s, warm friendly appearance, gentle smile, wearing comfortable modern clothes, supportive caring expression"
+    }
+  },
+  "relationshipMap": {
+    "박영순-김복순": "40년간 단절된 모녀, 오해와 원망 → 진실 발견 후 화해",
+    "박영순-박영희": "소원해진 자매, 서로에 대한 서운함 → 이해와 화해",
+    "박영순-이재현": "가까운 모자, 아들이 어머니의 치유를 도움",
+    "박영순-김수정": "원만한 시어머니-며느리 관계, 정서적 지지"
+  }
+}

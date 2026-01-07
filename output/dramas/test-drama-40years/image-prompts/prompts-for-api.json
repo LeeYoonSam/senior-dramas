@@ -1,0 +1,217 @@
+{
+  "projectInfo": {
+    "projectName": "test-drama-40years",
+    "title": "40년 만의 진실 (40 Years of Truth)",
+    "totalScenes": 24,
+    "scenesPerChapter": 3,
+    "createdAt": "2026-01-06"
+  },
+  "characters": {
+    "parkYoungSoon": {
+      "name": "Park Young-soon",
+      "age": 68,
+      "role": "Protagonist",
+      "description": "Korean woman in her late 60s, short neat gray-streaked hair, strong dignified appearance, deep wrinkles around eyes, slim build, neat posture"
+    },
+    "kimBokSoon": {
+      "name": "Kim Bok-soon",
+      "age": 92,
+      "role": "Mother (with dementia)",
+      "description": "Very elderly Korean woman in her early 90s, white thin hair, small frail body, deeply wrinkled face, sometimes confused expression but warm gentle eyes when lucid"
+    },
+    "parkYoungHee": {
+      "name": "Park Young-hee",
+      "age": 65,
+      "role": "Younger sister",
+      "description": "Korean woman in her mid-60s, tired but strong appearance, simple practical clothing, graying hair pulled back simply, weathered hands"
+    },
+    "leeJaeHyun": {
+      "name": "Lee Jae-hyun",
+      "age": 40,
+      "role": "Son",
+      "description": "Korean man in his early 40s, neat professional appearance, gentle eyes, wearing casual but clean clothes"
+    },
+    "youngYoungSoon": {
+      "name": "Young Young-soon",
+      "age": 8,
+      "role": "Protagonist as child (flashback)",
+      "description": "Korean girl around 8 years old, wearing simple 1960s Korean clothing, sad eyes, small build"
+    },
+    "youngBokSoon": {
+      "name": "Young Bok-soon",
+      "age": 30,
+      "role": "Mother in 1964 (flashback)",
+      "description": "Korean woman in her 30s, traditional Korean clothing, tired but loving expression, weathered hands from hard work"
+    }
+  },
+  "scenes": [
+    {
+      "id": "ch1-scene1",
+      "chapter": 1,
+      "sceneNumber": 1,
+      "title": "Receiving the Phone Call",
+      "prompt": "A Korean woman in her late 60s with short gray-streaked hair stands frozen in a modern apartment kitchen. Morning sunlight streams through the window. She holds a coffee cup in one hand and a phone to her ear with the other. Her face shows shock and confusion, eyes wide, lips slightly parted, face pale. She stares into empty space with unfocused eyes. Clean modern kitchen interior with city view through window."
+    },
+    {
+      "id": "ch1-scene2",
+      "chapter": 1,
+      "sceneNumber": 2,
+      "title": "After the Phone Call",
+      "prompt": "A Korean woman in her late 60s stands by a large window, her back partially visible. One hand rests on the window frame. Her posture shows heaviness and contemplation. Afternoon sunlight illuminates the room. City skyline visible through the window. She gazes out at the view with a distant, troubled expression."
+    },
+    {
+      "id": "ch1-scene3",
+      "chapter": 1,
+      "sceneNumber": 3,
+      "title": "Sleepless Night",
+      "prompt": "A Korean woman in her late 60s sits alone on a sofa in a dark living room at 3 AM. She holds a glass of water with both hands, shoulders slightly slumped. Her face shows exhaustion and complexity, dark circles visible under her eyes. Faint city lights visible through the window. A clock shows 3 AM. She gazes down at the water glass in her hands."
+    },
+    {
+      "id": "ch2-scene1",
+      "chapter": 2,
+      "sceneNumber": 1,
+      "title": "At the Gate",
+      "prompt": "A Korean woman in her late 60s stands before an old wooden gate of a traditional Korean house. Her hand reaches toward the gate but stops mid-air. Her expression shows fear and tension, lips pressed tightly together. Old single-story Korean house with weathered gate, moss on stone walls. Traditional Korean residential neighborhood."
+    },
+    {
+      "id": "ch2-scene2",
+      "chapter": 2,
+      "sceneNumber": 2,
+      "title": "First Meeting with Mother",
+      "prompt": "Two Korean women in a small traditional room. A very elderly woman in her 90s with white hair sits on a bed, tilting her head in confusion with hazy eyes. A woman in her late 60s stands at the doorway, hands clasped to her chest, eyes reddening with shock and sadness. Afternoon light streams through the window. Old furniture, traditional Korean room with medicine smell atmosphere."
+    },
+    {
+      "id": "ch2-scene3",
+      "chapter": 2,
+      "sceneNumber": 3,
+      "title": "Sisters Clash",
+      "prompt": "Two Korean women in their 60s facing each other in an old Korean house entryway. One woman with neat gray hair speaks emotionally, one hand pressing her chest, tears welling in her eyes, lips trembling. The other woman with simply pulled-back gray hair stands with arms crossed, defensive yet hurt expression. Tension between them visible. Old shoe cabinet, worn entryway of traditional Korean house."
+    },
+    {
+      "id": "ch3-scene1",
+      "chapter": 3,
+      "sceneNumber": 1,
+      "title": "Train Station Farewell (Flashback 1964)",
+      "prompt": "1960s Korean rural train station in winter. An 8-year-old Korean girl looks out from a train window, small hand touching the glass, biting her lip to hold back tears, sad and frightened expression. On the platform, a Korean woman in her 30s wearing traditional Korean clothing waves goodbye, forcing a painful smile while holding back tears. Steam locomotive, winter scenery, snow. The two looking at each other as distance grows between them."
+    },
+    {
+      "id": "ch3-scene2",
+      "chapter": 3,
+      "sceneNumber": 2,
+      "title": "Crying Alone at Night",
+      "prompt": "A Korean woman in her late 60s sits on a bed in a modern bedroom, head bowed, face covered with both hands. Her shoulders shake with sobbing. Only a bedside lamp illuminates the dark, quiet room. Emotional release after 60 years of suppressed tears."
+    },
+    {
+      "id": "ch3-scene3",
+      "chapter": 3,
+      "sceneNumber": 3,
+      "title": "Comfort from Daughter-in-law",
+      "prompt": "Two Korean women sitting together on a sofa. An older woman in her late 60s with bowed head, reddened eyes, opening her heart. A younger woman in her late 30s with warm, empathetic expression, tears in her eyes, holding her mother-in-law's hands. Warm living room with evening lighting. Generational connection and comfort."
+    },
+    {
+      "id": "ch4-scene1",
+      "chapter": 4,
+      "sceneNumber": 1,
+      "title": "Discovering Letters",
+      "prompt": "In a dusty attic storage room, a Korean man in his 40s kneels beside an old box, holding yellowed envelopes in surprise. A Korean woman in her late 60s stands beside him, looking down at the box with trembling hands, shocked expression. Dozens of old letters spilling from the box, all addressed with the same handwriting. Light streaming through a small window, dust particles visible in the air."
+    },
+    {
+      "id": "ch4-scene2",
+      "chapter": 4,
+      "sceneNumber": 2,
+      "title": "Reading the Letters",
+      "prompt": "A Korean woman in her late 60s sits on the floor of an attic, hunched over, holding old letter paper with trembling hands. Tears stream down her face, lips quivering with complex emotions. Scattered letters around her on the dusty floor. Sunlight filtering through dust. She gazes intently at the letter in her hands."
+    },
+    {
+      "id": "ch4-scene3",
+      "chapter": 4,
+      "sceneNumber": 3,
+      "title": "Sister's Confession",
+      "prompt": "Two Korean women in an old Korean house living room. One woman in her late 60s stands holding a letter, shocked and regretful with glistening tears. Another woman in her mid-60s sits with bowed head, tearful expression, releasing a long-held burden. Afternoon sunlight, old furniture, traditional Korean home interior."
+    },
+    {
+      "id": "ch5-scene1",
+      "chapter": 5,
+      "sceneNumber": 1,
+      "title": "Finding the Diary",
+      "prompt": "A Korean woman in her late 60s kneels in a dusty storage room, holding an old, worn diary with trembling hands. Her expression shows tension and fear, sensing something important. Dust particles float in the beam of light. Old boxes and items around her. She stares intently at the diary in her hands."
+    },
+    {
+      "id": "ch5-scene2",
+      "chapter": 5,
+      "sceneNumber": 2,
+      "title": "Moment of Truth",
+      "prompt": "A Korean woman in her late 60s has collapsed to the floor, clutching an old diary to her chest. She weeps uncontrollably, tears streaming, face showing regret and profound grief. Afternoon sunlight from window, quiet room, world-shattering emotional moment."
+    },
+    {
+      "id": "ch5-scene3",
+      "chapter": 5,
+      "sceneNumber": 3,
+      "title": "The Last Page",
+      "prompt": "Close-up of elderly Korean woman's hands holding open diary showing the last page. The same sentence repeated hundreds of times in fading, increasingly shaky handwriting. She covers her mouth with one hand, sobbing. Tear-stained ink visible on the aged paper."
+    },
+    {
+      "id": "ch6-scene1",
+      "chapter": 6,
+      "sceneNumber": 1,
+      "title": "Self-Blame",
+      "prompt": "A Korean woman in her late 60s sits in a chair by a window, staring outside with slumped shoulders. Her expression is empty and exhausted, dark circles under eyes. Unfocused gaze looking through the window. Uneaten food nearby. Living room with lifeless atmosphere."
+    },
+    {
+      "id": "ch6-scene2",
+      "chapter": 6,
+      "sceneNumber": 2,
+      "title": "Crying by Mother's Bedside",
+      "prompt": "Night scene in a dimly lit room. A Korean woman in her late 60s kneels beside a bed, holding the hand of a sleeping elderly woman in her 90s. She cries silently, tears running down her cheeks. The elderly mother sleeps peacefully with serene expression. Soft lamp light, quiet night atmosphere. Contrast between the crying daughter and peacefully sleeping mother."
+    },
+    {
+      "id": "ch6-scene3",
+      "chapter": 6,
+      "sceneNumber": 3,
+      "title": "Mother's Comfort",
+      "prompt": "A very elderly Korean woman in her 90s has risen from bed, reaching out to stroke the hair of a tearful woman in her late 60s. The mother has warm, concerned expression with clear, lucid eyes. The daughter looks up with surprise and hope, tears covering her face but eyes shining. Soft bedroom lighting, warm atmosphere. A mother comforting her crying daughter."
+    },
+    {
+      "id": "ch7-scene1",
+      "chapter": 7,
+      "sceneNumber": 1,
+      "title": "Daily Visits",
+      "prompt": "Spring day. A Korean woman in her late 60s opens an old gate, holding a small bouquet of flowers. She has a peaceful, determined expression with a slight smile. Traditional Korean house courtyard with blooming flowers, warm sunlight, well-maintained but aged home."
+    },
+    {
+      "id": "ch7-scene2",
+      "chapter": 7,
+      "sceneNumber": 2,
+      "title": "Moment of Reconciliation",
+      "prompt": "Two Korean women holding hands in a sunlit room. A woman in her late 60s sits beside her elderly mother in her 90s. Both have tears mixed with smiles, happy tears, looking into each other's eyes. The elderly mother with clear, warm expression, gently holding her daughter's hands. Spring scenery visible through window. Peaceful, emotional atmosphere. Mother and daughter finally reconciled."
+    },
+    {
+      "id": "ch7-scene3",
+      "chapter": 7,
+      "sceneNumber": 3,
+      "title": "The Embrace",
+      "prompt": "Sunlit room. A Korean woman in her late 60s embraces her elderly mother in her 90s tightly, eyes closed, crying happy tears. The frail elderly mother is held in the embrace, one hand patting her daughter's back, peaceful smile with tears. In the background, another woman in her mid-60s stands in the doorway, covering her mouth with hand, moved to tears watching. Family reunion after 60 years of separation."
+    },
+    {
+      "id": "ch8-scene1",
+      "chapter": 8,
+      "sceneNumber": 1,
+      "title": "Sharing Breakfast",
+      "prompt": "Morning scene. A Korean woman in her late 60s sits before her elderly mother in her 90s, feeding her with a spoon. She has a warm, peaceful smile. The elderly mother accepts the food with gentle, childlike innocent expression. Morning sunlight fills the room. Korean breakfast tray visible. Warm, caring atmosphere between mother and daughter."
+    },
+    {
+      "id": "ch8-scene2",
+      "chapter": 8,
+      "sceneNumber": 2,
+      "title": "Spring Day Walk",
+      "prompt": "Spring garden scene. A Korean woman in her late 60s pushes a wheelchair carrying her elderly mother through a flowering garden. She looks down at her mother with peaceful smile. The elderly mother in the wheelchair has eyes closed, face turned up to the sun, happy and peaceful expression. Blooming flowers, warm sunshine, peaceful atmosphere. Mother and daughter sharing quiet moment together."
+    },
+    {
+      "id": "ch8-scene3",
+      "chapter": 8,
+      "sceneNumber": 3,
+      "title": "Holding Hands by the Window",
+      "prompt": "Final scene. A Korean woman in her late 60s and her elderly mother in her 90s sit side by side near a window, holding hands, shoulders touching. Both have peaceful, serene smiles, quiet joy in their eyes. They gaze out the window together at the spring landscape. Warm sunlight streaming in, blooming flowers visible outside. Ultimate peace and reconciliation. 40 years of misunderstanding resolved. Two generations of Korean women finding love after decades apart."
+    }
+  ]
+}
